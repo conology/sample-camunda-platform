@@ -16,12 +16,12 @@ identityKeycloak:
 console:
   ingress:
     enabled: true
-    host: "console.silly-goose.test"
+    host: "console.coffee-trader.test"
 
 operate:
   ingress:
     enabled: true
-    host: "operate.silly-goose.test"
+    host: "operate.coffee-trader.test"
 
 optimize:
   enabled: false
@@ -29,7 +29,7 @@ optimize:
 tasklist:
   ingress:
     enabled: true
-    host: "tasklist.silly-goose.test"
+    host: "tasklist.coffee-trader.test"
 
 # Reduce for Zeebe and Gateway the configured replicas and with that the required resources
 # to get it running locally
@@ -44,10 +44,10 @@ zeebeGateway:
   ingress:
     rest:
       enabled: true
-      host: "zeebe.silly-goose.test"
+      host: "zeebe.coffee-trader.test"
     grpc:
       enabled: true
-      host: "zeebe-grpc.silly-goose.test"
+      host: "zeebe-grpc.coffee-trader.test"
 
 connectors:
   enabled: true
