@@ -1,0 +1,12 @@
+apiVersion: k3d.io/v1alpha5
+# https://k3d.io/v5.6.3/usage/configfile/
+kind: Simple
+metadata:
+  name: coffee-traders # name that you want to give to your cluster (will still be prefixed with `k3d-`)
+ports:
+  - port: 80:80 # same as `--port '8080:80@loadbalancer'`
+    nodeFilters:
+      - loadbalancer
+registries:
+  use:
+    - k3d-registry:5000
